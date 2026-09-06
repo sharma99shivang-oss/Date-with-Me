@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Date With Me, Princess
 
 A production-oriented MERN invitation experience: a playful, cinematic, multi-step date invitation with a protected response dashboard.
@@ -48,3 +49,6 @@ Set the frontend root directory to `frontend`, build command to `npm run build`,
 Create a Web Service from this repository with root directory `backend`, build command `npm install`, and start command `npm start`. Add `MONGO_URI`, `JWT_SECRET`, `CLIENT_ORIGIN`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD`.
 
 MongoDB is required for saving invitation responses and admin analytics. The app still exposes a useful health response while Mongo is disconnected so deployment diagnostics are readable. Optional imagery is represented by tasteful CSS gradients and emoji, so no image hosting is required.
+=======
+# Date-with-Me
+>>>>>>> 776723d9bc7226f04b9a173f3d4db4099cf4bcce
