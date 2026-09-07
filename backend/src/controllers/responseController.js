@@ -6,6 +6,8 @@ export async function createResponse(req, res) {
   const userAgent = req.get('user-agent') || '';
   const payload = {
     ...req.body,
+    restaurant: req.body.restaurant || req.body.restaurantName,
+    restaurantName: req.body.restaurantName || req.body.restaurant,
     dateDate: req.body?.dateDate || req.body?.date,
     dateTime: req.body?.dateTime || req.body?.time,
     browser: userAgent.split(')')[0].split('(').pop() || 'unknown',
@@ -46,7 +48,9 @@ Phone: ${response.guestPhone}
 
 Answer: ${response.answer}
 
-Restaurant: ${response.restaurant || "-"}
+// Restaurant: ${response.restaurant || "-"}
+
+Restaurant: ${response.restaurantName || response.restaurant || "-"}
 
 Cuisine: ${response.cuisine || "-"}
 
