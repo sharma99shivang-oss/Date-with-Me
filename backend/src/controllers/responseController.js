@@ -48,8 +48,6 @@ Phone: ${response.guestPhone}
 
 Answer: ${response.answer}
 
-// Restaurant: ${response.restaurant || "-"}
-
 Restaurant: ${response.restaurantName || response.restaurant || "-"}
 
 Cuisine: ${response.cuisine || "-"}
